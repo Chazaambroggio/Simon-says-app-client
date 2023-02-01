@@ -1,0 +1,211 @@
+html, body {
+    height: 99%;
+    background-color: #141d2b;
+    font-family: 'Press Start 2P';
+    color: #9fef00;
+    overflow: contain;
+}
+#root {
+    height: 100%;
+}
+.app {
+    height: 90%;
+}
+
+header {
+    margin: auto 2vw;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+    height: 5%;
+    font-size: x-small;
+    text-align: center;
+}
+
+button {
+    font-family: 'Press Start 2P';
+    text-align: center;
+    background-color: #9fef00;
+    color: #141d2b;
+    font-size: 2vw;
+    font-weight: 700;
+    padding: 1vw 4vw;
+    border: none;
+    margin: 2vw;
+}
+
+input {
+    font-family: 'Press Start 2P';
+    background-color: transparent;
+    color: #9fef00;
+    width: 66%;
+    font-size: 2vw;
+    line-height: 2.5rem;
+    border: none;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    text-align: center;
+}
+input:focus {
+    outline: none !important;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+}
+
+::placeholder {
+    text-align: center;
+    color: #9fef008a;
+}
+
+h2 {
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.app .main-window {
+    height: 95%;
+    display: flex;
+}
+
+/* ### Records ### */
+.records-area {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+}
+.records-area > div > p{
+    display: inline;
+    line-height: 2rem;
+}
+
+
+.game-area {
+    min-height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.score{
+    font-size: 2vw;
+    margin: 1vh;
+}
+
+.color-area {
+    display: flex;
+    justify-content: center;
+    max-width: 550px;
+    flex-wrap: wrap;
+}
+
+.colorCard {
+    width: 200px;
+    height: 200px;
+    border-radius: 55px;
+    border: 10px solid black;
+    margin: 15px;
+}
+
+.green {
+    background-color: green;
+}
+.red {
+    background-color: red;
+}
+.yellow {
+    background-color: yellow;
+}
+
+.blue {
+    background-color: blue;
+}
+.flash {
+    opacity: .5;
+}
+
+.game-over {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 800px) {
+
+    h3 {
+        font-size: 3vw;
+    }
+
+    div > p {
+        font-size: 2vw;
+    }
+
+    
+    button {
+        font-size: 4vw;
+        font-weight: 700;
+        padding: 2vw 10vw;
+    }
+
+    input {
+        width: 70%;
+        font-size: 3vh;
+    }
+
+    .app .main-window {
+        display: block;
+    }
+
+    .records-area {
+        display: block;
+        margin: auto;
+        width: auto;
+    }
+    .records-area > div > p {
+        font-size: 3vw;
+        line-height: 1.5rem;
+    }
+
+    .game-area {
+        display: block;
+        margin: 30px auto;
+        width: 100%;
+    }
+
+    .score {
+        font-size: 3vw;
+    }
+
+    .color-area {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        width: 90%;
+    }
+    
+    .colorCard {
+        width: 30%;
+        height: 15vh;
+        margin: 5px;
+        border-radius: 30px;
+        border: 5px solid black;
+    }
+
+}
